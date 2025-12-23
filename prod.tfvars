@@ -1,0 +1,5 @@
+ami_id        = "ami-02eb7a4783e7e9317"
+instance_type = "t3.micro"
+key_name      = "FC-key"
+subnet_id     = "subnet-0ec7bc905d0373b2c"
+name          = "terraform-prod"
