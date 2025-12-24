@@ -1,5 +1,10 @@
-variable "vpc_cidr" {}
-variable "vpc_name" {}
+variable "vpc_cidr" {
+  type = string
+}
+
+variable "vpc_name" {
+  type = string
+}
 
 variable "public_subnets" {
   type = map(object({
@@ -14,3 +19,4 @@ variable "private_subnets" {
     az   = string
   }))
 }
+
