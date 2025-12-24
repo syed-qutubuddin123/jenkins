@@ -1,20 +1,36 @@
-variable "ami_id" {
-  default = "ami-02eb7a4783e7e9317"
+variable "environment" {
+  type = string
 }
 
-variable "instance_type" {
-  default = "t3.micro"
+variable "vpc_cidr" {
+  type = string
 }
 
-variable "key_name" {
-  default = "FC-key"
+variable "vpc_name" {
+  type = string
 }
 
-variable "subnet_id" {
-  default = "subnet-0ec7bc905d0373b2c"
+variable "public_subnets" {
+  type = map(object({
+    cidr = string
+    az   = string
+  }))
 }
 
-variable "name" {
-  default = "terraform-ec2"
+variable "private_subnets" {
+  type = map(object({
+    cidr = string
+    az   = string
+  }))
+}
+
+variable "servers" {
+  type = map(object({
+    name          = string
+    ami_id        = string
+    instance_type = string
+    key_name      = string
+    subnet_id     = string
+  }))
 }
 
