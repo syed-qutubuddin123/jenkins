@@ -1,7 +1,7 @@
 environment = "dev"
 
 vpc_name  = "dev-vpc"
-alb_name  = "dev-alb"
+alb_name  = "dev-lb"
 
 vpc_cidr = "10.10.0.0/24"
 

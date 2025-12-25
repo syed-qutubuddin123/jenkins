@@ -1,7 +1,7 @@
 environment = "prod"
 
 vpc_name  = "prod-vpc"
-alb_name  = "prod-alb"
+alb_name  = "prod-lb"
 
 vpc_cidr = "10.20.0.0/24"
 
