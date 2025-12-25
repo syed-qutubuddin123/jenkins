@@ -1,8 +1,12 @@
-variable "vpc_cidr" {
+variable "environment" {
   type = string
 }
 
 variable "vpc_name" {
+  type = string
+}
+
+variable "vpc_cidr" {
   type = string
 }
 
@@ -18,5 +22,13 @@ variable "private_subnets" {
     cidr = string
     az   = string
   }))
+}
+
+variable "alb_name" {
+  type = string
+}
+
+variable "tags" {
+  type = map(string)
 }
 
