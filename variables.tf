@@ -1,14 +1,6 @@
-variable "environment" {
-  type = string
-}
+variable "environment" {}
 
-variable "vpc_name" {
-  type = string
-}
-
-variable "vpc_cidr" {
-  type = string
-}
+variable "vpc_cidr" {}
 
 variable "public_subnets" {
   type = map(object({
@@ -22,21 +14,5 @@ variable "private_subnets" {
     cidr = string
     az   = string
   }))
-}
-
-variable "alb_name" {
-  type = string
-}
-
-variable "tags" {
-  type = map(string)
-}
-
-variable "zone_name" {
-  type = string
-}
-
-variable "server_records" {
-  type = map(string)
 }
 
