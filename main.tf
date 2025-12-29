@@ -15,3 +15,11 @@ module "alb" {
   tags              = var.tags
 }
 
+module "route53" {
+  source = "./modules/r53"
+
+  zone_name = var.zone_name
+
+  server_records = var.server_records
+}
+
