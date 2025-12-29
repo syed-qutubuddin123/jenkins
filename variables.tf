@@ -37,6 +37,8 @@ variable "zone_name" {
 }
 
 variable "server_records" {
-  type = map(string)
+  type    = map(string)
+  default = {}
 }
+
 
