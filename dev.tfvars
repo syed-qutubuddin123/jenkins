@@ -15,6 +15,8 @@ private_subnets = {
   private-2 = { cidr = "10.10.0.48/28", az = "ap-south-1b" }
 }
 
+zone_name = "farhan.dev"
+
 tags = {
   Environment = "dev"
 }
