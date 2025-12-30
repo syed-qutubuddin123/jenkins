@@ -25,9 +25,8 @@ resource "aws_instance" "my_ec2" {
 
   user_data = <<EOF
 #!/bin/bash
-yum update -y
-amazon-linux-extras install epel -y || true
-yum install -y httpd
+dnf update -y
+dnf install -y httpd
 systemctl enable httpd
 systemctl start httpd
 echo "welcome to ${var.environment} application" > /var/www/html/index.html
