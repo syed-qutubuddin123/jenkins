@@ -31,6 +31,7 @@ systemctl enable httpd
 systemctl start httpd
 echo "welcome to ${var.environment} application" > /var/www/html/index.html
 EOF
+
   tags = {
     Name = var.name
   }
