@@ -22,7 +22,7 @@ module "ec2" {
   source = "./modules/ec2"
 
   name          = "${var.environment}-ec2"
-  ami_id        = "ami-06bdd2d56adcaadae"
+  ami_id        = "ami-0f5ee92e2d63afc18"
   instance_type = "t3.micro"
   subnet_id     = module.vpc.public_subnet_ids[0]
   vpc_id        = module.vpc.vpc_id
